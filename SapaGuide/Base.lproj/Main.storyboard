@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SapaGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +17,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAPA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Te6-gS-ZNr">
+                                <rect key="frame" x="16" y="132" width="568" height="46"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Průvodce nákupním a kulturním centrem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hji-Uf-pb3">
+                                <rect key="frame" x="16" y="100" width="568" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSr-Mk-MRG">
+                                <rect key="frame" x="241" y="285" width="118" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Katalog obchodů">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvo-Z7-not">
+                                <rect key="frame" x="241" y="323" width="118" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Interaktivní mapa">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU4-Gl-lf6">
+                                <rect key="frame" x="238" y="361" width="125" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Informace o SAPĚ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMp-7i-gXh">
+                                <rect key="frame" x="266" y="399" width="68" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="O aplikaci">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-Y8-Mqb">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.21687117319999999" blue="0.4545454545" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bSr-Mk-MRG" secondAttribute="centerX" id="6cS-hs-7MU"/>
+                            <constraint firstAttribute="centerX" secondItem="Te6-gS-ZNr" secondAttribute="centerX" id="Drc-Ar-o3w"/>
+                            <constraint firstAttribute="centerX" secondItem="hji-Uf-pb3" secondAttribute="centerX" id="EGE-hx-CW2"/>
+                            <constraint firstItem="SMp-7i-gXh" firstAttribute="top" secondItem="kU4-Gl-lf6" secondAttribute="bottom" constant="8" symbolic="YES" id="Gyq-8a-E1L"/>
+                            <constraint firstItem="Te6-gS-ZNr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HoN-Kx-yFY"/>
+                            <constraint firstItem="hji-Uf-pb3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="OSH-aY-SXd"/>
+                            <constraint firstAttribute="centerX" secondItem="Lvo-Z7-not" secondAttribute="centerX" id="SSk-dU-jGP"/>
+                            <constraint firstAttribute="centerX" secondItem="SMp-7i-gXh" secondAttribute="centerX" id="Tf9-tv-WIQ"/>
+                            <constraint firstItem="Te6-gS-ZNr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cib-xg-CDe"/>
+                            <constraint firstItem="Lvo-Z7-not" firstAttribute="top" secondItem="bSr-Mk-MRG" secondAttribute="bottom" constant="8" symbolic="YES" id="gak-Bj-C9R"/>
+                            <constraint firstAttribute="centerX" secondItem="7nq-Y8-Mqb" secondAttribute="centerX" id="mqe-1H-MQE"/>
+                            <constraint firstAttribute="centerX" secondItem="kU4-Gl-lf6" secondAttribute="centerX" id="o9n-k6-jQh"/>
+                            <constraint firstAttribute="centerY" secondItem="bSr-Mk-MRG" secondAttribute="centerY" id="rRZ-UI-NmX"/>
+                            <constraint firstItem="Te6-gS-ZNr" firstAttribute="top" secondItem="hji-Uf-pb3" secondAttribute="bottom" constant="8" symbolic="YES" id="stJ-iX-aWh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7nq-Y8-Mqb" secondAttribute="bottom" id="vea-Rb-bli"/>
+                            <constraint firstItem="kU4-Gl-lf6" firstAttribute="top" secondItem="Lvo-Z7-not" secondAttribute="bottom" constant="8" symbolic="YES" id="vr5-Mr-l31"/>
+                            <constraint firstItem="hji-Uf-pb3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wAj-eJ-Tcm"/>
+                            <constraint firstItem="hji-Uf-pb3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wf4-jK-V2M"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adBanner" destination="7nq-Y8-Mqb" id="SGm-bv-fJY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

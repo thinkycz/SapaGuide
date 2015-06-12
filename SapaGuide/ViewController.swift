@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import iAd
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ADInterstitialAdDelegate {
 
+    @IBOutlet weak var adBanner: ADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +21,14 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func interstitialAdDidUnload(interstitialAd: ADInterstitialAd!) {
+        
+    }
+    
+    func interstitialAd(interstitialAd: ADInterstitialAd!, didFailWithError error: NSError!) {
+        
     }
 
 

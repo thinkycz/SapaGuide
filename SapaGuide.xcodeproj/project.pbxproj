@@ -14,6 +14,7 @@
 		C50520B01B1B861900F98CAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50520AF1B1B861900F98CAA /* Images.xcassets */; };
 		C50520B31B1B861900F98CAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C50520B11B1B861900F98CAA /* LaunchScreen.xib */; };
 		C50520BF1B1B861900F98CAA /* SapaGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50520BE1B1B861900F98CAA /* SapaGuideTests.swift */; };
+		C50520C91B1C8ED600F98CAA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50520C81B1C8ED600F98CAA /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C50520B81B1B861900F98CAA /* SapaGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapaGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50520BD1B1B861900F98CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C50520BE1B1B861900F98CAA /* SapaGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SapaGuideTests.swift; sourceTree = "<group>"; };
+		C50520C81B1C8ED600F98CAA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50520C91B1C8ED600F98CAA /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		C50520971B1B861900F98CAA = {
 			isa = PBXGroup;
 			children = (
+				C50520C81B1C8ED600F98CAA /* iAd.framework */,
 				C50520A21B1B861900F98CAA /* SapaGuide */,
 				C50520BB1B1B861900F98CAA /* SapaGuideTests */,
 				C50520A11B1B861900F98CAA /* Products */,
@@ -79,12 +83,8 @@
 		C50520A21B1B861900F98CAA /* SapaGuide */ = {
 			isa = PBXGroup;
 			children = (
-				C50520A51B1B861900F98CAA /* AppDelegate.swift */,
 				C50520AA1B1B861900F98CAA /* ViewController.swift */,
 				C50520AC1B1B861900F98CAA /* Main.storyboard */,
-				C50520AF1B1B861900F98CAA /* Images.xcassets */,
-				C50520B11B1B861900F98CAA /* LaunchScreen.xib */,
-				C50520A71B1B861900F98CAA /* SapaGuide.xcdatamodeld */,
 				C50520A31B1B861900F98CAA /* Supporting Files */,
 			);
 			path = SapaGuide;
@@ -93,6 +93,10 @@
 		C50520A31B1B861900F98CAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C50520AF1B1B861900F98CAA /* Images.xcassets */,
+				C50520B11B1B861900F98CAA /* LaunchScreen.xib */,
+				C50520A51B1B861900F98CAA /* AppDelegate.swift */,
+				C50520A71B1B861900F98CAA /* SapaGuide.xcdatamodeld */,
 				C50520A41B1B861900F98CAA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -164,6 +168,7 @@
 				TargetAttributes = {
 					C505209F1B1B861900F98CAA = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = YCQCF8ZHK5;
 					};
 					C50520B71B1B861900F98CAA = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -346,7 +351,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SapaGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,7 +364,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SapaGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
